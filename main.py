@@ -20,7 +20,7 @@ y = data.iloc[:, [-1]].values
 x_train, x_test, y_train, y_test = train_test_split(
     x, y, test_size=0.3, random_state=0)
 
-exp = st.sidebar.slider('Experience', 1, 10, 2)
+exp = st.sidebar.slider('Experience', 1.1, 20.5, 0.1)
 
 reg = LinearRegression()
 reg.fit(x_train, y_train)
